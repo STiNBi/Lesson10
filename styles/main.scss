@@ -1,0 +1,225 @@
+@import 'base/base';
+@import 'base/variables';
+@import 'base/mixins';
+
+body {
+    background-color: #FF805D;
+}
+
+.main-box{
+    @include box(100%, 200px, rgb(62, 166, 201));
+    display: flex;
+    margin: 100px auto;
+}
+
+.slider{
+    @include box('', 200px, white);
+    margin-right: 1px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition-property: all;    
+    transition-duration: 1s;
+
+    .info{
+        @include box(0px, 200px, rgb(255, 255, 255));
+        display: block;
+        overflow: hidden;
+        left: 75px;
+        z-index: 99;
+        transition-property: width;
+        transition-duration: 1s;
+
+        h2{
+            display: block;
+            margin: 30px 0px 10px 20px;
+            font-size: 50px;
+            font-family: Calibri, sans-serif;
+			font-weight: 800;
+        }
+
+        p{
+            display: block;
+            margin: 10px 0 0 20px;
+            @include box(260px, 200px, none);
+            font-family: Calibri, sans-serif;
+			font-weight: 800;
+        }
+    }
+
+    &:hover .info{
+        @include box(300px, 200px, rgb(255, 255, 255));
+        display: block;
+        overflow: hidden;
+    }
+
+    .small-img{
+        @include box(75px, 200px, rgb(73, 155, 199));
+        display: block;
+        position: relative;
+        transition-property: width; 
+        transition-duration: 1s;
+    }
+
+    &:hover .small-img{
+        @include box(0px, 200px, rgb(73, 155, 199));
+        cursor: pointer;
+        display: absolute;
+    } 
+        
+    .big-img{
+        @include box(0px, 200px, none);
+        display: block;
+        position: relative;
+        overflow: hidden;
+        transition-property: width;
+        transition-duration: 1s;
+    }
+    
+    &:hover .big-img{
+        @include box(75px, 200px, none);
+        cursor: pointer;
+        display: absolute;
+    }
+
+    .twitter-img{
+        background: {
+            image: url("img/twitter.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .twitter-big-img{
+        background: {
+            color: rgb(21, 199, 208);
+            image: url("img/twitter.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+        
+    }
+
+    .facebook-img{
+        background: {
+            image: url("img/facebook.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .facebook-big-img{
+        background: {
+            color: rgb(12, 36, 103);
+            image: url("img/facebook.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .linkedin-img{
+        background: {
+            image: url("img/linkedin.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .linkedin-big-img{
+        background: {
+            color: rgb(23, 78, 229);
+            image: url("img/linkedin.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .instagram-img{
+        background: {
+            image: url("img/instagram.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .instagram-big-img{
+        background: {
+            color: rgb(119, 166, 168);
+            image: url("img/instagram.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .youtube-img{
+        background: {
+            image: url("img/youtube.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .youtube-big-img{
+        background: {
+            color: rgb(205, 15, 15);
+            image: url("img/youtube.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .tumblr-img{
+        background: {
+            image: url("img/tumblr.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .tumblr-big-img{
+        background: {
+            color: rgb(62, 68, 98);
+            image: url("img/tumblr.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .dribbble-img{
+        background: {
+            image: url("img/dribble.svg");
+            size: 20px 20px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+    .dribbble-big-img{
+        background: {
+            color: rgb(208, 54, 152);
+            image: url("img/dribble.svg");
+            size: 50px 50px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+
+}
+
+    
+
+    
+
